@@ -99,10 +99,10 @@ const RotatingEarth: React.FC = () => {
       const aspect = w / h;
       camera.aspect = aspect;
 
-      // Safe distance: ratio 0.84 makes the Earth boldly bigger on the right side while leaving room for orbit labels
+      // Safe distance: ratio 0.58 sizes Earth proportionally inside the canvas so orbit labels circulate clearly outside without overlapping the globe
       const minDimensionRatio = Math.min(1, aspect);
-      const safeZ = (radius * 2) / (2 * Math.tan(THREE.MathUtils.degToRad(45 / 2)) * minDimensionRatio * 0.84);
-      camera.position.z = Math.max(2.8, safeZ);
+      const safeZ = (radius * 2) / (2 * Math.tan(THREE.MathUtils.degToRad(45 / 2)) * minDimensionRatio * 0.58);
+      camera.position.z = Math.max(3.2, safeZ);
       camera.updateProjectionMatrix();
 
       renderer.setSize(w, h);

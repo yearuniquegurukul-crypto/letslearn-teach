@@ -19,7 +19,7 @@ export const OrbitLabels: React.FC = () => {
   return (
     <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-30">
       <motion.div
-        className="w-[80%] h-[80%] sm:w-[84%] sm:h-[84%] rounded-full border border-pink-300/80 relative"
+        className="w-[84%] h-[84%] sm:w-[86%] sm:h-[86%] rounded-full border border-pink-300/80 relative"
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 42, ease: "linear" }}
       >
@@ -37,7 +37,7 @@ export const OrbitLabels: React.FC = () => {
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ repeat: Infinity, duration: 42, ease: "linear" }}
-                className="bg-white/98 backdrop-blur-md border-2 border-pink-300 text-pink-950 px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-[11px] sm:text-xs md:text-sm font-black whitespace-nowrap shadow-xl pointer-events-auto hover:scale-110 hover:border-pink-500 transition-all cursor-pointer drop-shadow-md"
+                className="bg-white/98 backdrop-blur-md border-2 border-pink-300 text-pink-950 px-2 sm:px-3.5 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs md:text-sm font-black whitespace-nowrap shadow-xl pointer-events-auto hover:scale-110 hover:border-pink-500 transition-all cursor-pointer drop-shadow-md"
               >
                 {label.name}
               </motion.div>

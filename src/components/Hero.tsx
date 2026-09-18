@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
 
   return (
     <section 
-      className="relative w-full min-h-[calc(100dvh-65px)] lg:h-[calc(100dvh-65px)] flex flex-col items-center justify-between pt-2 sm:pt-4 pb-3 sm:pb-4 px-2 sm:px-6 lg:px-8 bg-pink-50 text-slate-900 overflow-hidden border-b border-pink-200" 
+      className="relative w-full min-h-[calc(100dvh-65px)] flex flex-col items-center justify-between pt-2 sm:pt-4 pb-4 sm:pb-6 px-2 sm:px-6 lg:px-8 bg-pink-50 text-slate-900 overflow-hidden border-b border-pink-200" 
       id="home"
     >
       {/* Background Natural Scenic Scene - Lush Green Mountains & River Area */}
@@ -34,21 +34,21 @@ export const Hero: React.FC = () => {
         initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="relative z-30 w-full flex flex-col items-center justify-center shrink-0 mt-1 sm:mt-2 px-2 gap-2 sm:gap-2.5"
+        className="relative z-30 w-full flex flex-col items-center justify-center shrink-0 mt-1 sm:mt-2 px-2 gap-1.5 sm:gap-2.5 max-w-4xl mx-auto"
       >
         {/* Main Title Pill (Side-by-side colorful words) */}
-        <div className="px-5 sm:px-8 md:px-10 py-2 sm:py-2.5 md:py-3 rounded-2xl sm:rounded-3xl bg-white/95 backdrop-blur-md border border-white/95 shadow-xl flex items-baseline justify-center gap-1.5 sm:gap-2.5 md:gap-3.5 select-none max-w-[96vw]">
-          <span className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-rose-600 to-red-600 drop-shadow-sm whitespace-nowrap">
+        <div className="px-4 sm:px-8 md:px-10 py-1.5 sm:py-2.5 md:py-3 rounded-2xl sm:rounded-3xl bg-white/95 backdrop-blur-md border border-white/95 shadow-xl flex flex-wrap items-center justify-center gap-1.5 sm:gap-2.5 md:gap-3.5 select-none max-w-[96vw]">
+          <span className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-rose-600 to-red-600 drop-shadow-sm whitespace-nowrap">
             {word1}
           </span>
-          <span className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-violet-700 via-purple-600 to-indigo-600 drop-shadow-sm whitespace-nowrap">
+          <span className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-violet-700 via-purple-600 to-indigo-600 drop-shadow-sm whitespace-nowrap">
             {word2}
           </span>
-          <span className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold italic bg-clip-text text-transparent bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 py-0.5 whitespace-nowrap">
+          <span className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-extrabold italic bg-clip-text text-transparent bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 py-0.5 whitespace-nowrap">
             {word3}
           </span>
           {word4 ? (
-            <span className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 drop-shadow-sm whitespace-nowrap">
+            <span className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 drop-shadow-sm whitespace-nowrap">
               {word4}
             </span>
           ) : null}
@@ -59,21 +59,21 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15, duration: 0.5 }}
-          className="px-4 sm:px-6 md:px-8 py-1.5 sm:py-2 rounded-full bg-white/95 backdrop-blur-md border border-pink-200 shadow-md flex items-center justify-center gap-2 text-center"
+          className="px-3.5 sm:px-6 md:px-8 py-1 sm:py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-pink-200 shadow-md flex items-center justify-center gap-1.5 sm:gap-2 text-center max-w-[96vw]"
         >
-          <span className="text-base sm:text-lg md:text-xl select-none shrink-0">🌍</span>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg font-black tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-pink-700 via-purple-700 to-indigo-700 whitespace-nowrap">
+          <span className="text-sm sm:text-base md:text-lg select-none shrink-0">🌍</span>
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg font-black tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-pink-700 via-purple-700 to-indigo-700 text-center">
             {t.heroSubtitle || 'Share knowledge globally and earn'}
           </p>
-          <span className="text-base sm:text-lg md:text-xl select-none shrink-0">💰</span>
+          <span className="text-sm sm:text-base md:text-lg select-none shrink-0">💰</span>
         </motion.div>
       </motion.div>
 
       {/* CENTER: Grand Rotating 3D Earth and Orbiting Subject Nodes */}
-      <div className="relative z-10 w-full flex-1 flex items-center justify-center my-auto py-2">
-        <div className="relative w-[min(88vw,48vh,380px)] h-[min(88vw,48vh,380px)] sm:w-[min(82vw,54vh,460px)] sm:h-[min(82vw,54vh,460px)] lg:w-[min(58vw,62vh,560px)] lg:h-[min(58vw,62vh,560px)] xl:w-[620px] xl:h-[620px] flex items-center justify-center shrink-0">
+      <div className="relative z-10 w-full flex-1 flex items-center justify-center my-auto py-2 sm:py-4">
+        <div className="relative w-[min(88vw,42vh,340px)] h-[min(88vw,42vh,340px)] sm:w-[min(82vw,48vh,420px)] sm:h-[min(82vw,48vh,420px)] lg:w-[min(52vw,52vh,480px)] lg:h-[min(52vw,52vh,480px)] xl:w-[500px] xl:h-[500px] flex items-center justify-center shrink-0">
           {/* Soft glowing background halo for depth */}
-          <div className="absolute inset-0 bg-pink-400/25 blur-[80px] sm:blur-[100px] rounded-full pointer-events-none"></div>
+          <div className="absolute inset-0 bg-pink-400/20 blur-[70px] sm:blur-[90px] rounded-full pointer-events-none"></div>
           <RotatingEarth />
           <OrbitLabels />
         </div>
