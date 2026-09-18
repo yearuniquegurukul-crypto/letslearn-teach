@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #2563EB;
+    --secondary: #7C3AED;
+    --accent: #F59E0B;
+    --success: #10B981;
+    --bg-light: #F8FAFC;
+    --bg-dark: #0B1120;
+    --text-primary: #0F172A;
+    --text-secondary: #64748B;
+    --card-white: #FFFFFF;
+    --card-dark: #111827;
+    --border: #E2E8F0;
+  }
+  
+  body {
+    @apply font-sans bg-[var(--bg-light)] text-[var(--text-primary)];
+    font-family: 'Noto Sans Bengali', sans-serif;
+  }
+
+  .dark {
+    @apply bg-[var(--bg-dark)] text-gray-100;
+  }
+}

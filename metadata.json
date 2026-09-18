@@ -1,0 +1,6 @@
+{
+  "name": "চলো শিখি এবং শেখাই",
+  "description": "শিক্ষা ও জ্ঞান ছড়িয়ে দেওয়ার একটি ডিজিটাল প্ল্যাটফর্ম",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
