@@ -23,7 +23,7 @@ export const translations: Record<string, Record<string, string>> = {
     christian: 'খ্রিস্ট ধর্ম',
     other: 'অন্যান্য ধর্ম',
     heroTitle: 'আসুন শিখি ও শেখাই',
-    heroSubtitle: 'বিশ্বজুড়ে জ্ঞান বিনিময় করুন এবং উপার্জন করুন',
+    heroSubtitle: 'বিশ্বজুড়ে জ্ঞান বিনিময় দ্বারা উপার্জন করি',
     heroWord1: 'আসুন',
     heroWord2: 'শিখি',
     heroWord3: 'ও',
@@ -47,7 +47,8 @@ export const translations: Record<string, Record<string, string>> = {
     contact: 'যোগাযোগ',
     emailLabel: 'ইমেইল',
     addressLabel: 'ঠিকানা',
-    allRightsReserved: 'সর্বস্বত্ব সংরক্ষিত'
+    allRightsReserved: 'সর্বস্বত্ব সংরক্ষিত',
+    earnSoon: 'আয়ের বিভাগ, শীঘ্রই আসছে'
   },
   en: {
     siteTitle: "Let's Learn and Teach",
@@ -97,7 +98,8 @@ export const translations: Record<string, Record<string, string>> = {
     contact: 'Contact',
     emailLabel: 'Email',
     addressLabel: 'Address',
-    allRightsReserved: 'All Rights Reserved'
+    allRightsReserved: 'All Rights Reserved',
+    earnSoon: 'Earn Section, coming soon'
   },
   hi: {
     siteTitle: 'चलो सीखें और सिखाएं',
@@ -147,7 +149,8 @@ export const translations: Record<string, Record<string, string>> = {
     contact: 'संपर्क',
     emailLabel: 'ईमेल',
     addressLabel: 'पता',
-    allRightsReserved: 'सर्वाधिकार सुरक्षित'
+    allRightsReserved: 'सर्वाधिकार सुरक्षित',
+    earnSoon: 'कमाई अनुभाग, जल्द आ रहा है'
   },
   ar: {
     siteTitle: 'لنتعلم ونُعلّم',
@@ -197,7 +200,8 @@ export const translations: Record<string, Record<string, string>> = {
     contact: 'اتصل بنا',
     emailLabel: 'البريد الإلكتروني',
     addressLabel: 'العنوان',
-    allRightsReserved: 'جميع الحقوق محفوظة'
+    allRightsReserved: 'جميع الحقوق محفوظة',
+    earnSoon: 'قسم الأرباح، قريباً'
   },
   ur: {
     siteTitle: 'آؤ سیکھیں اور سکھائیں',
@@ -247,6 +251,7 @@ export const translations: Record<string, Record<string, string>> = {
     contact: 'رابطہ',
     emailLabel: 'ای میل',
     addressLabel: 'پتہ',
-    allRightsReserved: 'جملہ حقوق محفوظ ہیں'
+    allRightsReserved: 'جملہ حقوق محفوظ ہیں',
+    earnSoon: 'کمائی کا سیکشن، جلد آ رہا ہے'
   }
 };

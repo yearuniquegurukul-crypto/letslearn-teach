@@ -13,30 +13,24 @@ export const Hero: React.FC = () => {
 
   return (
     <section 
-      className="relative w-full min-h-[calc(100dvh-65px)] flex flex-col items-center justify-between pt-2 sm:pt-4 pb-4 sm:pb-6 px-2 sm:px-6 lg:px-8 bg-pink-50 text-slate-900 overflow-hidden border-b border-pink-200" 
+      className="relative w-full min-h-[calc(100dvh-65px)] flex flex-col items-center justify-between pt-2 sm:pt-4 pb-4 sm:pb-6 px-2 sm:px-6 lg:px-8 text-white overflow-hidden border-b border-white/20" 
       id="home"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22)), url("/assets/images/hero-background.jpg")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+      }}
     >
-      {/* Background Natural Scenic Scene - Lush Green Mountains & River Area */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden select-none">
-        {/* Crisp high-definition landscape with lush green trees, mountains, and pristine river */}
-        <img
-          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=85&w=2560&auto=format&fit=crop"
-          alt="Lush Green Tree Covered Mountains and River Landscape"
-          referrerPolicy="no-referrer"
-          className="w-full h-full object-cover object-center transform scale-100 filter brightness-105 contrast-105 saturate-110"
-        />
-        {/* Subtle vignette for seamless top/bottom transition keeping nature vibrant and clean */}
-        <div className="absolute inset-0 bg-gradient-to-b from-pink-900/15 via-transparent to-pink-950/25"></div>
-      </div>
       
-      {/* TOP HEADER: "Let's Learn and Teach" + Subtitle "Share knowledge globally and earn" - fully visible on PC, Tablet, & Mobile */}
+      {/* TOP HEADER */}
       <motion.div 
         initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="relative z-30 w-full flex flex-col items-center justify-center shrink-0 mt-1 sm:mt-2 px-2 gap-1.5 sm:gap-2.5 max-w-4xl mx-auto"
       >
-        {/* Main Title Pill (Side-by-side colorful words) */}
+        {/* Main Title Pill */}
         <div className="px-4 sm:px-8 md:px-10 py-1.5 sm:py-2.5 md:py-3 rounded-2xl sm:rounded-3xl bg-white/95 backdrop-blur-md border border-white/95 shadow-xl flex flex-wrap items-center justify-center gap-1.5 sm:gap-2.5 md:gap-3.5 select-none max-w-[96vw]">
           <span className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-rose-600 to-red-600 drop-shadow-sm whitespace-nowrap">
             {word1}
@@ -54,7 +48,7 @@ export const Hero: React.FC = () => {
           ) : null}
         </div>
 
-        {/* Subtitle Pill: "Share knowledge globally and earn" - 100% visible across all devices */}
+        {/* Subtitle Pill */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -69,7 +63,7 @@ export const Hero: React.FC = () => {
         </motion.div>
       </motion.div>
 
-      {/* CENTER: Grand Rotating 3D Earth and Orbiting Subject Nodes */}
+      {/* CENTER: Grand Rotating 3D Earth */}
       <div className="relative z-10 w-full flex-1 flex items-center justify-center my-auto py-2 sm:py-4">
         <div className="relative w-[min(88vw,42vh,340px)] h-[min(88vw,42vh,340px)] sm:w-[min(82vw,48vh,420px)] sm:h-[min(82vw,48vh,420px)] lg:w-[min(52vw,52vh,480px)] lg:h-[min(52vw,52vh,480px)] xl:w-[500px] xl:h-[500px] flex items-center justify-center shrink-0">
           {/* Soft glowing background halo for depth */}
