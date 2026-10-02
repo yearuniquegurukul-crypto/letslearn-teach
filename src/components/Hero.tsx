@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
       className="relative w-full min-h-[calc(100dvh-65px)] flex flex-col items-center justify-between pt-2 sm:pt-4 pb-4 sm:pb-6 px-2 sm:px-6 lg:px-8 text-white overflow-hidden border-b border-white/20" 
       id="home"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22)), url("/assets/images/hero-background.jpg")`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22)), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2400&q=80")`,
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
